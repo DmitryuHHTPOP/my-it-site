@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спасибо за заявку!</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Небольшая центровка для страницы благодарности */
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .thanks-box {
+            background: var(--glass-bg);
+            backdrop-filter: blur(15px);
+            border: 1px solid var(--nebula-glow);
+            border-radius: 20px;
+            padding: 50px 40px;
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+            box-shadow: 0 0 40px rgba(37, 99, 235, 0.6);
+            animation: modal-appear 0.6s ease-out;
+        }
+        .thanks-icon {
+            font-size: 5rem;
+            margin-bottom: 20px;
+        }
+        .thanks-box h1 {
+            color: var(--star-white);
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+        }
+        .thanks-box p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Звёздный фон -->
+    <div class="stars"></div>
+    <div class="stars stars-2"></div>
+    <div class="stars stars-3"></div>
+    <div class="nebula"></div>
+
+    <div class="thanks-box">
+        <div class="thanks-icon">🚀</div>
+        <h1>Спасибо за заявку!</h1>
+        <p>Я получил ваше сообщение и свяжусь с вами в ближайшее время.</p>
+        <a href="https://DmitryuHHTPOP.github.io/my-it-site/" class="btn">Вернуться на сайт</a>
+    </div>
+</body>
+</html>
