@@ -182,8 +182,10 @@
                     </div>
                 </div>
                 
-                <!-- Форма -->
-                <form id="contact-form" class="contact-form" action="https://formsubmit.co/dimatol347@gmail.com" method="POST">
+                <!-- Форма с перенаправлением на thanks.html -->
+                <form class="contact-form" action="https://formsubmit.co/dimatol347@gmail.com" method="POST">
+                    <!-- Скрытые настройки FormSubmit -->
+                    <input type="hidden" name="_next" value="https://DmitryuHHTPOP.github.io/my-it-site/thanks.html">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_subject" value="Новая заявка с сайта IT-Репетитор!">
                     <input type="hidden" name="_template" value="table">
@@ -193,7 +195,7 @@
                     <input type="tel" name="Телефон" placeholder="Ваш телефон" required>
                     <textarea name="Сообщение" rows="4" placeholder="Расскажите о ваших целях (например, подготовка к ЕГЭ)" required></textarea>
                     
-                    <button type="submit" class="btn" id="submit-btn">Отправить заявку</button>
+                    <button type="submit" class="btn">Отправить заявку</button>
                 </form>
             </div>
         </div>
@@ -206,17 +208,6 @@
             <p>Подготовка к ЕГЭ, ОГЭ по информатике.</p>
         </div>
     </footer>
-
-    <!-- Всплывающее окно благодарности -->
-    <div id="thank-you-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn" id="close-modal">&times;</span>
-            <div class="modal-icon">🚀</div>
-            <h2>Спасибо за заявку!</h2>
-            <p>Я получил ваше сообщение и свяжусь с вами в ближайшее время.</p>
-            <button class="btn" id="close-modal-btn">Отлично</button>
-        </div>
-    </div>
 
     <script src="script.js"></script>
 </body>
