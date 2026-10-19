@@ -185,7 +185,6 @@
                 <form class="contact-form" action="https://formsubmit.co/dimatol347@gmail.com" method="POST">
                     <!-- Перенаправление после отправки -->
                     <input type="hidden" name="_next" value="https://DmitryuHHTPOP.github.io/my-it-site/#contact">
-                    
                     <!-- Настройки FormSubmit -->
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_subject" value="Новая заявка с сайта IT-Репетитор!">
@@ -211,5 +210,15 @@
     </footer>
 
     <script src="script.js"></script>
+        <!-- Всплывающее окно благодарности (скрыто по умолчанию) -->
+    <div id="thank-you-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-modal">&times;</span>
+            <div class="modal-icon">🚀</div>
+            <h2>Спасибо за заявку!</h2>
+            <p>Я получил ваше сообщение и свяжусь с вами в ближайшее время.</p>
+            <button class="btn" id="close-modal-btn">Отлично</button>
+        </div>
+    </div>
 </body>
 </html>
