@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Репетитор по информатике | Подготовка к ЕГЭ и ОГЭ</title>
+    <title>Репетитор по информатике | Дмитрий</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -92,11 +92,6 @@
                     <h3>Программирование</h3>
                     <p>Обучение языкам Python и C++ с нуля. Решение олимпиадных задач, создание первых проектов.</p>
                 </div>
-                <div class="service-card">
-                    <div class="service-icon">🚀</div>
-                    <h3>Олимпиадная подготовка</h3>
-                    <p>Для тех, кто хочет поступать в вузы по олимпиадам. Изучение сложных алгоритмов и структур данных.</p>
-                </div>
             </div>
         </div>
     </section>
@@ -149,7 +144,7 @@
             <h2 class="section-title">Отзывы учеников</h2>
             <div class="review-grid">
                 <div class="review-card">
-                    <p class="review-text">"Александр объясняет сложные вещи простым языком. Сдал ЕГЭ на 95 баллов, поступил в МГТУ им. Баумана!"</p>
+                    <p class="review-text">"Дмитрий объясняет сложные вещи простым языком. Сдал ЕГЭ на 95 баллов, поступил в МГТУ им. Баумана!"</p>
                     <p class="review-author">— Дмитрий, 11 класс</p>
                 </div>
                 <div class="review-card">
@@ -175,24 +170,34 @@
                     <br>
                     <div class="contact-item">
                         <span class="contact-icon">📞</span>
-                        <span>+7 (932)60 45 481 </span>
+                        <span>+7 (932) 604-54-81</span>
                     </div>
                     <div class="contact-item">
                         <span class="contact-icon">✉️</span>
-                        <span>info@it-repetitor.ru</span>
+                        <span>dimatol347@gmail.com</span>
                     </div>
                     <div class="contact-item">
                         <span class="contact-icon">📍</span>
                         <span>Онлайн по всей России</span>
                     </div>
                 </div>
-                <form class="contact-form">
-                    <input type="text" placeholder="Ваше имя" required>
-                    <input type="email" placeholder="Ваш Email" required>
-                    <input type="tel" placeholder="Ваш телефон" required>
-                    <textarea rows="4" placeholder="Расскажите о ваших целях (например, подготовка к ЕГЭ)" required></textarea>
+                
+                <!-- ВАЖНО: action указывает на сервис отправки, method="POST" -->
+                <form class="contact-form" action="https://formsubmit.co/dimatol347@gmail.com" method="POST">
+                    <!-- Настройки FormSubmit -->
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="Новая заявка с сайта IT-Репетитор!">
+                    <input type="hidden" name="_template" value="table">
+                    
+                    <!-- Поля формы (атрибут name обязателен для получения письма) -->
+                    <input type="text" name="Имя" placeholder="Ваше имя" required>
+                    <input type="email" name="Email" placeholder="Ваш Email" required>
+                    <input type="tel" name="Телефон" placeholder="Ваш телефон" required>
+                    <textarea name="Сообщение" rows="4" placeholder="Расскажите о ваших целях (например, подготовка к ЕГЭ)" required></textarea>
+                    
                     <button type="submit" class="btn">Отправить заявку</button>
                 </form>
+                
             </div>
         </div>
     </section>
@@ -200,7 +205,7 @@
     <!-- Подвал -->
     <footer>
         <div class="container">
-            <p>&copy; 2023 IT-Репетитор. Все права защищены.</p>
+            <p>&copy; 2024 IT-Репетитор. Все права защищены.</p>
             <p>Подготовка к ЕГЭ, ОГЭ и олимпиадам по информатике.</p>
         </div>
     </footer>
