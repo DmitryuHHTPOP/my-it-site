@@ -182,14 +182,15 @@
                     </div>
                 </div>
                 
-                <!-- ВАЖНО: action указывает на сервис отправки, method="POST" -->
                 <form class="contact-form" action="https://formsubmit.co/dimatol347@gmail.com" method="POST">
+                    <!-- Перенаправление после отправки -->
+                    <input type="hidden" name="_next" value="https://DmitryuHHTPOP.github.io/my-it-site/">
+                    
                     <!-- Настройки FormSubmit -->
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_subject" value="Новая заявка с сайта IT-Репетитор!">
                     <input type="hidden" name="_template" value="table">
                     
-                    <!-- Поля формы (атрибут name обязателен для получения письма) -->
                     <input type="text" name="Имя" placeholder="Ваше имя" required>
                     <input type="email" name="Email" placeholder="Ваш Email" required>
                     <input type="tel" name="Телефон" placeholder="Ваш телефон" required>
@@ -197,7 +198,6 @@
                     
                     <button type="submit" class="btn">Отправить заявку</button>
                 </form>
-                
             </div>
         </div>
     </section>
